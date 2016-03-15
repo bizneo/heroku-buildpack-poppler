@@ -14,7 +14,7 @@ if ! [ -e $CACHE_DIR/$FILE_NAME ]; then
   echo "-----> building Fontconfig buildpack binaries"
   cd $CACHE_DIR
   echo $CACHE_DIR/$FILE_NAME
-  curl http://www.freedesktop.org/software/fontconfig/release/$FILE_NAME > $CACHE_DIR/$FILE_NAME
+  curl https://www.freedesktop.org/software/fontconfig/release/$FILE_NAME > $CACHE_DIR/$FILE_NAME
   tar -xzf $FILE_NAME
   cd "fontconfig-${FONTCONFIG_VERSION}"
   ./configure
